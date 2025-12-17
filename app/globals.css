@@ -28,7 +28,7 @@ body {
 /* Retro Arcade Font */
 .arcade-font {
   font-family: 'Press Start 2P', cursive;
-  text-shadow: 0 0 10px currentColor;
+  text-shadow: 0 0 5px currentColor;
 }
 
 /* Animated Grid Background */
@@ -108,37 +108,33 @@ body {
 .neon-blue {
   color: var(--arcade-blue);
   text-shadow:
-    0 0 5px var(--arcade-blue),
-    0 0 10px var(--arcade-blue),
-    0 0 20px var(--arcade-blue),
-    0 0 40px var(--arcade-blue);
+    0 0 3px var(--arcade-blue),
+    0 0 6px var(--arcade-blue),
+    0 0 10px var(--arcade-blue);
 }
 
 .neon-red {
   color: var(--arcade-red);
   text-shadow:
-    0 0 5px var(--arcade-red),
-    0 0 10px var(--arcade-red),
-    0 0 20px var(--arcade-red),
-    0 0 40px var(--arcade-red);
+    0 0 2px var(--arcade-red),
+    0 0 4px var(--arcade-red),
+    0 0 8px var(--arcade-red);
 }
 
 .neon-yellow {
   color: var(--arcade-yellow);
   text-shadow:
-    0 0 5px var(--arcade-yellow),
-    0 0 10px var(--arcade-yellow),
-    0 0 20px var(--arcade-yellow),
-    0 0 40px var(--arcade-yellow);
+    0 0 3px var(--arcade-yellow),
+    0 0 6px var(--arcade-yellow),
+    0 0 10px var(--arcade-yellow);
 }
 
 .neon-green {
   color: var(--arcade-green);
   text-shadow:
-    0 0 5px var(--arcade-green),
-    0 0 10px var(--arcade-green),
-    0 0 20px var(--arcade-green),
-    0 0 40px var(--arcade-green);
+    0 0 3px var(--arcade-green),
+    0 0 6px var(--arcade-green),
+    0 0 10px var(--arcade-green);
 }
 
 /* Retro Border */

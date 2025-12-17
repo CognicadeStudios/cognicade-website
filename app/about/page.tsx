@@ -50,9 +50,6 @@ export default function AboutPage() {
       <section className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="retro-border bg-[#0a0a1f]/80 backdrop-blur-md p-6 sm:p-8 pixel-corners scanlines mb-12 relative">
-            <div className="absolute -top-3 left-4 bg-[#0a0a1f] px-3">
-              <span className="arcade-font text-xs sm:text-sm neon-yellow">MISSION</span>
-            </div>
             <h2 className="text-2xl sm:text-3xl font-bold neon-blue mb-4 uppercase">Our Mission</h2>
             <p className="text-[#00ff88] text-base sm:text-lg leading-relaxed mb-4">
               Cognicade Studios was founded by a team of passionate developers who believe in the power of games to educate and inspire. What started as a collection of hackathon projects has evolved into a mission to create meaningful educational experiences through interactive gaming.

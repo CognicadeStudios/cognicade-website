@@ -148,7 +148,7 @@ export default function ContactPage() {
             <div className="bg-[#0a0a1f]/80 backdrop-blur-sm border-4 border-[#00d4ff] p-6 text-center pixel-corners hover:border-[#ff0055] hover:scale-105 transition-all duration-300">
               <div className="text-4xl mb-3">📧</div>
               <h3 className="text-lg font-bold neon-yellow mb-2 uppercase">Email</h3>
-              <p className="text-[#00d4ff] text-sm">contact@cognicade.com</p>
+              <p className="text-[#00d4ff] text-sm">cognicadestudios@gmail.com</p>
             </div>
             <div className="bg-[#0a0a1f]/80 backdrop-blur-sm border-4 border-[#00d4ff] p-6 text-center pixel-corners hover:border-[#ff0055] hover:scale-105 transition-all duration-300">
               <div className="text-4xl mb-3">🐙</div>
