@@ -40,8 +40,8 @@ const games = [
   },
   {
     title: "The FACTory",
-    description: "Content Moderation Game About Truth and Misinformation",
-    longDescription: "Made for GMU ASSIP 2025. You are a new content moderator at 'Fact,' a company dedicated to uncovering truth amidst misinformation. Protect Fact from its chaotic rival, 'Fibble.' What starts as a simple job of flagging fake news soon reveals itself to be a secret corporate sabotage campaign. Will you be able to find the truth among the lies?",
+    description: "Made for GMU ASSIP 2025 & VGSI. Content Moderation Game About Truth and Misinformation",
+    longDescription: "You are a new content moderator at 'Fact,' a company dedicated to uncovering truth amidst misinformation. Protect Fact from its chaotic rival, 'Fibble.' What starts as a simple job of flagging fake news soon reveals itself to be a secret corporate sabotage campaign. Will you be able to find the truth among the lies?",
     image: "/theFACToryPreview.png",
     link: "https://big-small-games.itch.io/the-factory",
     features: [
@@ -147,16 +147,16 @@ export default function Home() {
             {/* Score Display */}
             <div className="flex justify-center gap-4 sm:gap-8 mb-6 sm:mb-10 flex-wrap">
               <div className="text-center">
-                <div className="text-[#00d4ff] text-xs sm:text-sm mb-1">1UP</div>
-                <div className="text-[#ffdd00] arcade-font text-sm sm:text-lg">006</div>
+                <div className="text-[#00d4ff] text-xs sm:text-sm mb-1">STUDENTS REACHED</div>
+                <div className="text-[#ffdd00] arcade-font text-sm sm:text-lg">500+</div>
               </div>
               <div className="text-center">
-                <div className="text-[#ff0055] text-xs sm:text-sm mb-1">HIGH SCORE</div>
-                <div className="text-[#ffdd00] arcade-font text-sm sm:text-lg">999999</div>
+                <div className="text-[#ff0055] text-xs sm:text-sm mb-1">HACKATHONS WON</div>
+                <div className="text-[#ffdd00] arcade-font text-sm sm:text-lg">5+</div>
               </div>
               <div className="text-center">
-                <div className="text-[#00ff88] text-xs sm:text-sm mb-1">GAMES</div>
-                <div className="text-[#ffdd00] arcade-font text-sm sm:text-lg">PLAYED</div>
+                <div className="text-[#00ff88] text-xs sm:text-sm mb-1">GAMES CREATED</div>
+                <div className="text-[#ffdd00] arcade-font text-sm sm:text-lg">10+</div>
               </div>
             </div>
 
