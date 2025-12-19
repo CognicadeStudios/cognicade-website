@@ -36,42 +36,38 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-12 sm:pt-32 sm:pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#00d4ff]/20 via-[#ff0055]/10 to-transparent"></div>
-        <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="arcade-font text-xs sm:text-sm neon-yellow mb-4 animate-pulse">
-            ★ COMMUNICATIONS TERMINAL ★
-          </div>
-          <h1 className="arcade-font text-4xl sm:text-5xl md:text-7xl neon-red mb-6">
-            CONTACT US
+      <section className="bg-gradient-to-br from-yellow-400 via-orange-400 to-orange-500 text-white pt-32 pb-20 px-4">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 drop-shadow-lg">
+            Contact Us
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl neon-blue mb-4">
+          <p className="text-xl sm:text-2xl mb-4 text-white drop-shadow-md">
             Get in Touch with Cognicade Studios
           </p>
         </div>
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-12 px-4">
+      <section className="section bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="retro-border bg-[#0a0a1f]/80 backdrop-blur-md p-6 sm:p-8 pixel-corners scanlines">
+          <div className="card p-8 sm:p-12 border-t-4 border-orange-500 shadow-xl shadow-orange-100">
             {submitted ? (
               <div className="text-center py-12">
-                <div className="text-6xl mb-4 neon-green">✓</div>
-                <h2 className="arcade-font text-2xl sm:text-3xl neon-yellow mb-4">
-                  MESSAGE SENT!
+                <div className="text-6xl mb-4 text-green-500">✓</div>
+                <h2 className="text-3xl font-bold text-orange-600 mb-4">
+                  Message Sent!
                 </h2>
-                <p className="text-[#00ff88] text-base sm:text-lg">
+                <p className="text-gray-600 text-lg">
                   Your message has been received. We&apos;ll get back to you as soon as possible.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit}>
                 <div className="mb-6">
-                  <label htmlFor="name" className="block text-[#ffdd00] font-bold mb-2 uppercase text-sm">
-                    ▸ Name *
+                  <label htmlFor="name" className="block text-orange-600 font-bold mb-2 text-sm">
+                    Name *
                   </label>
                   <input
                     type="text"
@@ -80,14 +76,14 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-black/50 border-2 border-[#00d4ff] text-[#00d4ff] focus:outline-none focus:border-[#ff0055] focus:shadow-[0_0_10px_rgba(255,0,85,0.5)] transition-all"
-                    placeholder="Player Name"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all"
+                    placeholder="Your Name"
                   />
                 </div>
 
                 <div className="mb-6">
-                  <label htmlFor="email" className="block text-[#ffdd00] font-bold mb-2 uppercase text-sm">
-                    ▸ Email *
+                  <label htmlFor="email" className="block text-orange-600 font-bold mb-2 text-sm">
+                    Email *
                   </label>
                   <input
                     type="email"
@@ -96,14 +92,14 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-black/50 border-2 border-[#00d4ff] text-[#00d4ff] focus:outline-none focus:border-[#ff0055] focus:shadow-[0_0_10px_rgba(255,0,85,0.5)] transition-all"
-                    placeholder="player@example.com"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all"
+                    placeholder="your.email@example.com"
                   />
                 </div>
 
                 <div className="mb-6">
-                  <label htmlFor="subject" className="block text-[#ffdd00] font-bold mb-2 uppercase text-sm">
-                    ▸ Subject *
+                  <label htmlFor="subject" className="block text-orange-600 font-bold mb-2 text-sm">
+                    Subject *
                   </label>
                   <input
                     type="text"
@@ -112,14 +108,14 @@ export default function ContactPage() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-black/50 border-2 border-[#00d4ff] text-[#00d4ff] focus:outline-none focus:border-[#ff0055] focus:shadow-[0_0_10px_rgba(255,0,85,0.5)] transition-all"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all"
                     placeholder="What is this regarding?"
                   />
                 </div>
 
                 <div className="mb-6">
-                  <label htmlFor="message" className="block text-[#ffdd00] font-bold mb-2 uppercase text-sm">
-                    ▸ Message *
+                  <label htmlFor="message" className="block text-orange-600 font-bold mb-2 text-sm">
+                    Message *
                   </label>
                   <textarea
                     id="message"
@@ -128,16 +124,16 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-black/50 border-2 border-[#00d4ff] text-[#00d4ff] focus:outline-none focus:border-[#ff0055] focus:shadow-[0_0_10px_rgba(255,0,85,0.5)] transition-all resize-vertical"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all resize-vertical"
                     placeholder="Enter your message here..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full arcade-button text-base sm:text-lg uppercase"
+                  className="w-full btn-primary text-lg"
                 >
-                  ▶ SEND MESSAGE ◀
+                  Send Message
                 </button>
               </form>
             )}
@@ -145,47 +141,43 @@ export default function ContactPage() {
 
           {/* Contact Info */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-[#0a0a1f]/80 backdrop-blur-sm border-4 border-[#00d4ff] p-6 text-center pixel-corners hover:border-[#ff0055] hover:scale-105 transition-all duration-300">
-              <div className="text-4xl mb-3">📧</div>
-              <h3 className="text-lg font-bold neon-yellow mb-2 uppercase">Email</h3>
-              <p className="text-[#00d4ff] text-sm">cognicadestudios@gmail.com</p>
+            <div className="card p-6 text-center hover:border-t-4 hover:border-orange-500 transition-all duration-300 hover:shadow-xl hover:shadow-orange-200">
+              <div className="text-5xl mb-3">📧</div>
+              <h3 className="text-lg font-bold text-orange-600 mb-2">Email</h3>
+              <p className="text-gray-600 text-sm">cognicadestudios@gmail.com</p>
             </div>
-            <div className="bg-[#0a0a1f]/80 backdrop-blur-sm border-4 border-[#00d4ff] p-6 text-center pixel-corners hover:border-[#ff0055] hover:scale-105 transition-all duration-300">
-              <div className="text-4xl mb-3">🐙</div>
-              <h3 className="text-lg font-bold neon-yellow mb-2 uppercase">GitHub</h3>
+            <div className="card p-6 text-center hover:border-t-4 hover:border-orange-500 transition-all duration-300 hover:shadow-xl hover:shadow-orange-200">
+              <div className="text-5xl mb-3">🐙</div>
+              <h3 className="text-lg font-bold text-orange-600 mb-2">GitHub</h3>
               <a
                 href="https://github.com/CognicadeStudios"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#00d4ff] hover:text-[#ff0055] transition-colors text-sm"
+                className="text-gray-600 hover:text-orange-600 transition-colors text-sm"
               >
                 @CognicadeStudios
               </a>
             </div>
-            <div className="bg-[#0a0a1f]/80 backdrop-blur-sm border-4 border-[#00d4ff] p-6 text-center pixel-corners hover:border-[#ff0055] hover:scale-105 transition-all duration-300">
-              <div className="text-4xl mb-3">🌍</div>
-              <h3 className="text-lg font-bold neon-yellow mb-2 uppercase">Location</h3>
-              <p className="text-[#00d4ff] text-sm">Virginia, USA</p>
+            <div className="card p-6 text-center hover:border-t-4 hover:border-orange-500 transition-all duration-300 hover:shadow-xl hover:shadow-orange-200">
+              <div className="text-5xl mb-3">🌍</div>
+              <h3 className="text-lg font-bold text-orange-600 mb-2">Location</h3>
+              <p className="text-gray-600 text-sm">Virginia, USA</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#0a0a1f]/90 border-t-4 border-[#00d4ff] mt-20 py-8 relative overflow-hidden">
-        <div className="absolute inset-0 scanlines opacity-30"></div>
-        <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-          <div className="arcade-font text-xs neon-blue mb-3">
-            GAME OVER
-          </div>
-          <p className="text-[#00ff88] text-sm mb-2">
-            &copy; 2024 <span className="neon-red font-bold">COGNICADE STUDIOS</span>
-          </p>
-          <p className="text-[#00d4ff]/80 text-xs">
+      <footer className="bg-gradient-to-r from-orange-600 to-red-600 text-white py-12 mt-20">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h3 className="text-2xl font-bold mb-3 drop-shadow-lg">Cognicade Studios</h3>
+          <p className="text-white/90 mb-6">
             Making the world a better place, one game at a time
           </p>
-          <div className="mt-4 arcade-font text-xs neon-yellow animate-pulse">
-            ★ PRESS START TO CONTINUE ★
+          <div className="border-t border-white/20 pt-6 mt-6">
+            <p className="text-white/80 text-sm">
+              &copy; 2024 Cognicade Studios. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
