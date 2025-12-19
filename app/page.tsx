@@ -39,21 +39,22 @@ const games = [
     ]
   },
   {
-    title: "Grading Hat",
-    description: "AI-Powered Grading Assistant",
-    longDescription: "An intelligent grading system that uses AI to assist educators in evaluating student work efficiently and consistently.",
-    image: "/gradingHatPreview.png",
-    link: "https://github.com/2900xt/Grading-Hat",
+    title: "The FACTory",
+    description: "Content Moderation Game About Truth and Misinformation",
+    longDescription: "Made for GMU ASSIP 2025. You are a new content moderator at 'Fact,' a company dedicated to uncovering truth amidst misinformation. Protect Fact from its chaotic rival, 'Fibble.' What starts as a simple job of flagging fake news soon reveals itself to be a secret corporate sabotage campaign. Will you be able to find the truth among the lies?",
+    image: "/theFACToryPreview.png",
+    link: "https://big-small-games.itch.io/the-factory",
     features: [
-      "AI-powered grading assistance",
-      "Consistent evaluation standards",
-      "Educational workflow integration",
-      "Automated feedback generation"
+      "Two whole levels of content moderation gameplay",
+      "Meticulously designed virtual desktop with impeccable sound design",
+      "Various educational minigames about misinformation",
+      "Hidden story about corporate sabotage and truth-seeking"
     ],
     technologies: [
-      { name: "AI/ML", color: "orange" },
-      { name: "Education", color: "blue" },
-      { name: "Automation", color: "green" }
+      { name: "C#", color: "purple" },
+      { name: "Unity", color: "blue" },
+      { name: "Game Dev", color: "green" },
+      { name: "Education", color: "orange" }
     ]
   },
   {
@@ -61,7 +62,7 @@ const games = [
     description: "Pirate-Themed Multiplayer Strategy Game",
     longDescription: "A competitive multiplayer game where players take on the role of pirates, competing for treasure and territory in a dynamic ocean environment.",
     image: "/plundrIOPreview.png",
-    link: "https://devpost.com/software/plundr-io",
+    link: "https://ashmithry.github.io/Plundr.io-Game/",
     features: [
       "Pirate-themed multiplayer gameplay",
       "Treasure hunting and territory control",
@@ -79,7 +80,7 @@ const games = [
     description: "Bread Tycoon Game with Prestige System",
     longDescription: "A bread tycoon game where players farm resources and build automated factories to create bread. Features a prestige system with 5 bread tiers and hand-drawn assets.",
     image: "/bread2DoughPreview.png",
-    link: "https://pranavdivichenchu.wixstudio.com/main/blank",
+    link: "https://2900xt.github.io/bread2dough-build/",
     features: [
       "Prestige system with 5 bread tiers",
       "Automated bread factories",
@@ -132,30 +133,30 @@ export default function Home() {
           <div className="retro-border bg-[#0a0a1f]/80 backdrop-blur-md p-6 sm:p-12 pixel-corners scanlines">
             {/* Insert Coin Animation */}
             <div className="text-center mb-6 sm:mb-8">
-              <div className="inline-block arcade-font text-xs sm:text-sm neon-yellow animate-pulse">
+              <div className="inline-block arcade-font text-xs sm:text-sm text-[#ffdd00] animate-pulse">
                 ★ INSERT COIN ★
               </div>
             </div>
 
             {/* Main Title */}
             <h1 className="arcade-font text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-center mb-4 sm:mb-8 leading-tight">
-              <span className="neon-red block mb-2 sm:mb-4">COGNICADE</span>
-              <span className="neon-blue block text-xl sm:text-3xl md:text-4xl">STUDIOS</span>
+              <span className="text-[#ff0055] block mb-2 sm:mb-4">COGNICADE</span>
+              <span className="text-[#00d4ff] block text-xl sm:text-3xl md:text-4xl">STUDIOS</span>
             </h1>
 
             {/* Score Display */}
             <div className="flex justify-center gap-4 sm:gap-8 mb-6 sm:mb-10 flex-wrap">
               <div className="text-center">
                 <div className="text-[#00d4ff] text-xs sm:text-sm mb-1">1UP</div>
-                <div className="neon-yellow arcade-font text-sm sm:text-lg">006</div>
+                <div className="text-[#ffdd00] arcade-font text-sm sm:text-lg">006</div>
               </div>
               <div className="text-center">
                 <div className="text-[#ff0055] text-xs sm:text-sm mb-1">HIGH SCORE</div>
-                <div className="neon-yellow arcade-font text-sm sm:text-lg">999999</div>
+                <div className="text-[#ffdd00] arcade-font text-sm sm:text-lg">999999</div>
               </div>
               <div className="text-center">
                 <div className="text-[#00ff88] text-xs sm:text-sm mb-1">GAMES</div>
-                <div className="neon-yellow arcade-font text-sm sm:text-lg">PLAYED</div>
+                <div className="text-[#ffdd00] arcade-font text-sm sm:text-lg">PLAYED</div>
               </div>
             </div>
 
@@ -166,10 +167,10 @@ export default function Home() {
                   <span className="text-[#ffdd00] font-bold text-xs sm:text-sm">MISSION</span>
                 </div>
                 <p className="text-[#00d4ff] text-sm sm:text-lg leading-relaxed text-center">
-                  Creating <span className="neon-red font-bold">Learning-Based</span> Interactive Games
+                  Creating <span className="text-[#ff0055] font-bold">Learning-Based</span> Interactive Games
                 </p>
                 <p className="text-[#00ff88] text-xs sm:text-base mt-3 sm:mt-4 leading-relaxed">
-                  Initially an archive for our hackathon projects, this website now hosts Cognicade Studios&apos; latest educational games. We use our talent to develop educational video games to make the world a better place, <span className="neon-yellow">one game at a time</span>.
+                  Initially an archive for our hackathon projects, this website now hosts Cognicade Studios&apos; latest educational games. We use our talent to develop educational video games to make the world a better place, <span className="text-[#ffdd00]">one game at a time</span>.
                 </p>
               </div>
             </div>
@@ -199,7 +200,7 @@ export default function Home() {
           {/* Section Title */}
           <div className="text-center mb-12">
             <div className="inline-block relative">
-              <h2 className="arcade-font text-2xl sm:text-4xl neon-yellow mb-2">
+              <h2 className="arcade-font text-2xl sm:text-4xl text-[#ffdd00] mb-2">
                 ★ GAME SELECT ★
               </h2>
               <div className="h-1 bg-gradient-to-r from-transparent via-[#ffdd00] to-transparent"></div>
@@ -220,14 +221,14 @@ export default function Home() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                  <div className="absolute bottom-2 left-2 arcade-font text-xs neon-blue">
+                  <div className="absolute bottom-2 left-2 arcade-font text-xs text-[#00d4ff]">
                     LVL {index + 1}
                   </div>
                 </div>
 
                 <div className="p-6">
                   {/* Title */}
-                  <h3 className="text-xl font-bold neon-blue group-hover:neon-red transition-all duration-300 mb-2 uppercase">
+                  <h3 className="text-xl font-bold text-[#00d4ff] group-hover:text-[#ff0055] transition-all duration-300 mb-2 uppercase">
                     {game.title}
                   </h3>
                   <p className="text-[#00ff88] text-sm mb-4">{game.description}</p>
@@ -278,20 +279,74 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonial Section */}
+      <section className="py-12 px-4 mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="arcade-font text-2xl sm:text-4xl text-[#ffdd00] mb-2">
+              ★ PLAYER REVIEWS ★
+            </h2>
+            <div className="h-1 bg-gradient-to-r from-transparent via-[#ffdd00] to-transparent"></div>
+          </div>
+
+          <div className="retro-border bg-[#0a0a1f]/80 backdrop-blur-md p-8 sm:p-12 pixel-corners scanlines relative">
+            <div className="absolute top-4 left-4 text-6xl text-[#00d4ff]/20">❝</div>
+            <div className="absolute bottom-4 right-4 text-6xl text-[#00d4ff]/20">❞</div>
+            
+            <div className="relative z-10">
+              <p className="text-[#00ff88] text-lg sm:text-xl leading-relaxed mb-8 text-center max-w-4xl mx-auto">
+                "The students in my FUSION class were absolutely captivated by EcoSpark! It was incredible to see them so engaged while learning about environmental science. They didn't just play the game – they started real conversations about climate change, energy resources, and sustainability. This is exactly the kind of educational tool we need in our classrooms today."
+              </p>
+              
+              <div className="text-center mb-8">
+                <p className="text-[#ff0055] font-bold text-lg mb-1">— Ariel Fitzsimmons</p>
+                <p className="text-[#00d4ff] text-sm">FUSION Program Teacher</p>
+                <p className="text-[#00d4ff]/80 text-xs">Creighton's Corner Elementary School</p>
+              </div>
+
+              {/* Image Gallery */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <div className="border-4 border-[#00d4ff] pixel-corners overflow-hidden hover:border-[#ff0055] transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/TEST_1.jpg"
+                    alt="Students playing EcoSpark"
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
+                <div className="border-4 border-[#00d4ff] pixel-corners overflow-hidden hover:border-[#ff0055] transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/TEST_2.jpg"
+                    alt="Students enjoying the game"
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
+                <div className="border-4 border-[#00d4ff] pixel-corners overflow-hidden hover:border-[#ff0055] transition-all duration-300 hover:scale-105">
+                  <img
+                    src="/TEST_3.jpg"
+                    alt="Classroom presentation"
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-[#0a0a1f]/90 border-t-4 border-[#00d4ff] mt-20 py-8 relative overflow-hidden">
         <div className="absolute inset-0 scanlines opacity-30"></div>
         <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-          <div className="arcade-font text-xs neon-blue mb-3">
+          <div className="arcade-font text-xs text-[#00d4ff] mb-3">
             GAME OVER
           </div>
           <p className="text-[#00ff88] text-sm mb-2">
-            &copy; 2024 <span className="neon-red font-bold">COGNICADE STUDIOS</span>
+            &copy; 2024 <span className="text-[#ff0055] font-bold">COGNICADE STUDIOS</span>
           </p>
           <p className="text-[#00d4ff]/80 text-xs">
             Making the world a better place, one game at a time
           </p>
-          <div className="mt-4 arcade-font text-xs neon-yellow animate-pulse">
+          <div className="mt-4 arcade-font text-xs text-[#ffdd00] animate-pulse">
             ★ PRESS START TO CONTINUE ★
           </div>
         </div>
