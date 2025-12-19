@@ -1,32 +1,44 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 export default function AboutPage() {
   const teamMembers = [
     {
       name: "Ashmith Yaramada",
       role: "CEO & Founder",
       description: "Passionate about creating educational games that make a difference.",
-      skills: ["Game Development", "Unity", "C#"]
+      skills: ["Game Development", "Unity", "C#"],
+      website: "https://ashmithyaramada.com",
+      pfp: "/ary.jpg"
     },
     {
       name: "Taha Rawjani",
       role: "CTO & Co-Founder",
       description: "Focuses on creating engaging and educational gameplay experiences.",
-      skills: ["Game Design", "Level Design", "UX"]
+      skills: ["Game Design", "Level Design", "UX"],
+      website: "https://taharawjani.org",
+      pfp: "/tr.jpg"
     },
     {
       name: "Pranav Divichenchi",
-      role: "Operations Officer",
+      role: "COO & Co-Founder",
       description: "Specializes in marketing and management.",
-      skills: ["Management", "Marketing", "Business Development"]
+      skills: ["Management", "Marketing", "Business Development"],
+      website: "https://pranav.com",
+      pfp: "/pdubs.jpg"
     },
     {
       name: "Arush Bodla",
-      role: "Software Engineer",
+      role: "CIO & Co-Founder",
       description: "Backend systems and infrastructure specialist.",
-      skills: ["Web Development", "Backend", "APIs"]
+      skills: ["Web Development", "Backend", "APIs"],
+      website: "https://arush.com",
+      pfp: "/ab.jpg"
     }
   ];
+
+  const router = useRouter();
 
   return (
     <div className="min-h-screen">
@@ -72,14 +84,23 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
-              <div
+              <button
                 key={index}
-                className="bg-[#0a0a1f]/80 backdrop-blur-sm border-4 border-[#00d4ff] hover:border-[#ff0055] p-6 pixel-corners glitch group transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#00d4ff]/50"
+                onClick={() => window.open(member.website, '_blank')}
+                className="bg-[#0a0a1f]/80 backdrop-blur-sm border-4 border-[#00d4ff] hover:border-[#ff0055] p-6 pixel-corners glitch group transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#00d4ff]/50 cursor-pointer"
               >
-                <div className="w-32 h-32 mx-auto mb-4 flex items-center justify-center border-4 border-[#ffdd00] bg-gradient-to-br from-[#00d4ff]/20 to-[#ff0055]/20 pixel-corners">
-                  <span className="arcade-font text-2xl neon-red">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </span>
+                <div className="w-32 h-32 mx-auto mb-4 flex items-center justify-center border-4 border-[#ffdd00] bg-gradient-to-br from-[#00d4ff]/20 to-[#ff0055]/20 pixel-corners overflow-hidden">
+                  {member.pfp ? (
+                    <img 
+                      src={member.pfp} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <span className="arcade-font text-2xl neon-red">
+                      {member.name.split(' ').map(n => n[0]).join('')}
+                    </span>
+                  )}
                 </div>
                 <h3 className="text-lg font-bold neon-blue group-hover:neon-yellow text-center mb-2 uppercase transition-all duration-300">
                   {member.name}
@@ -100,7 +121,7 @@ export default function AboutPage() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </button>
             ))}
           </div>
         </div>

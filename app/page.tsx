@@ -6,7 +6,7 @@ const games = [
     description: "Educational Climate Change Management Game",
     longDescription: "Built for the 2024 Congressional App Challenge, Virginia District 10. An educational game that teaches players about climate change through city management and energy resource balancing.",
     image: "/ecoSparkPreview.png",
-    link: "https://github.com/CognicadeStudios/EcoSpark",
+    link: "https://pranavdivichenchu.wixstudio.com/main/blank-2",
     features: [
       "Educational climate change simulation",
       "City management and energy resource balancing",
@@ -79,7 +79,7 @@ const games = [
     description: "Bread Tycoon Game with Prestige System",
     longDescription: "A bread tycoon game where players farm resources and build automated factories to create bread. Features a prestige system with 5 bread tiers and hand-drawn assets.",
     image: "/bread2DoughPreview.png",
-    link: "https://devpost.com/software/bread-to-dough",
+    link: "https://pranavdivichenchu.wixstudio.com/main/blank",
     features: [
       "Prestige system with 5 bread tiers",
       "Automated bread factories",
